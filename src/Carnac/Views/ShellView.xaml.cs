@@ -36,10 +36,10 @@ namespace Carnac.Views
             var iconStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Carnac.icon.embedded.ico");
 
             var ni = new NotifyIcon
-                         {
-                             Icon = new Icon(iconStream),
-                             ContextMenu = new ContextMenu(new[] { item })
-                         };
+            {
+                Icon = new Icon(iconStream),
+                ContextMenu = new ContextMenu(new[] { item })
+            };
 
             ni.Click += NotifyIconClick;
             ni.Visible = true;
@@ -82,11 +82,11 @@ namespace Carnac.Views
                 return;
 
             var rb = sender as System.Windows.Controls.RadioButton;
-            if (rb == null) 
+            if (rb == null)
                 return;
 
             var tag = rb.Tag as DetailedScreen;
-            if (tag == null) 
+            if (tag == null)
                 return;
 
             dc.SelectedScreen = tag;
@@ -122,5 +122,5 @@ namespace Carnac.Views
         }
     }
 
-    
+
 }

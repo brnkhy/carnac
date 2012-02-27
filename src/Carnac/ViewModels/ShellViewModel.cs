@@ -200,12 +200,20 @@ namespace Carnac.ViewModels
         }
         private void PlaceScreen()
         {
+<<<<<<< HEAD
             if (Screens == null)
+=======
+            if (Screens == null) 
+>>>>>>> upstream/master
                 return;
 
             SelectedScreen = Screens.FirstOrDefault(s => s.Index == Settings.Screen);
 
+<<<<<<< HEAD
             if (SelectedScreen == null)
+=======
+            if (SelectedScreen == null) 
+>>>>>>> upstream/master
                 return;
 
             switch (Settings.Placement)
